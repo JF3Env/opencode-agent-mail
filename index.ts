@@ -302,7 +302,7 @@ export default Plugin.define({
       if (me) {
         event.system.push({
           type: "text",
-          text: `Your agent name is ${me.name}. Sign every message you send to the coordinator with it. Every pull request you create must begin its description with the line "Agent: ${me.name}", so the coordinator can tell whose work it is and ask you directly why it is stopped. Watch your pull requests' comments, and answer the coordinator's messages; it addresses you as "to: ${me.name}".`,
+          text: `Your agent name is ${me.name}. Other sessions address you as "to: ${me.name}". Sign the messages you send with it.`,
         })
       }
     })
