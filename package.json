@@ -1,0 +1,12 @@
+{
+  "name": "opencode-agent-mail",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that lets OpenCode and Claude Code sessions on one machine message each other, with a durable conversation history.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.ts",
+  "peerDependencies": {
+    "@opencode/plugin": "^2.0.16",
+    "zod": "^4.1.8"
+  }
+}
