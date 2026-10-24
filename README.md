@@ -69,9 +69,9 @@ on files:
 - Sends are rate-limited per peer: an identical message within 20 s is refused, and so is a seventh message
   within a minute.
 - Messages are plain text up to 8000 characters.
-- The system prompt the plugin adds asks each agent to sign its messages and to start its pull-request
-  descriptions with `Agent: <name>`. That is a convention of the workflow it was written for; edit the
-  `context` hook in `index.ts` to change it.
+- The plugin tells each agent its name and asks it to sign its messages, nothing more. Rules of a particular
+  workflow, such as naming the agent in its pull requests, belong in that project's own instructions
+  (for example its `AGENTS.md`), which can refer to the agent name.
 
 ## License
 
